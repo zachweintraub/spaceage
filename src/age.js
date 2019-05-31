@@ -13,8 +13,8 @@ export class age {
     }
 
     getRemainingYears(planet){
-
-        let remainingYears = (71.5 - (new Date().getFullYear() - this.birthday.getFullYear())) / solarYears[planet];
+        const lifeExpectancy = 71.5;
+        let remainingYears = (lifeExpectancy - (new Date().getFullYear() - this.birthday.getFullYear())) / solarYears[planet];
         return parseFloat(remainingYears.toFixed(2));
     }
 
