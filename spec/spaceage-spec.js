@@ -67,4 +67,52 @@ describe('age', function() {
         expect(actual).toEqual(expected);
     });
 
+    it('should test if user expected remaining life expectancy in mercury years is correct', function() {
+        let expected = parseFloat((164.58 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('mercury');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in venus years is correct', function() {
+        let expected = parseFloat((63.71 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('venus');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in mars years is correct', function() {
+        let expected = parseFloat((21.01 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('mars');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in jupiter years is correct', function() {
+        let expected = parseFloat((3.33 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('jupiter');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in saturn years is correct', function() {
+        let expected = parseFloat((1.34 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('saturn');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in uranus years is correct', function() {
+        let expected = parseFloat((0.47 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('uranus');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in neptune years is correct', function() {
+        let expected = parseFloat((0.24 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('neptune');
+        expect(actual).toEqual(expected);
+    });
+
+    it('should test if user expected remaining life expectancy in pluto years is correct', function() {
+        let expected = parseFloat((0.16 + new Date().getFullYear() - 2019).toFixed(2));
+        let actual = reusableAge.getRemainingYears('pluto');
+        expect(actual).toEqual(expected);
+    });
+
 });
