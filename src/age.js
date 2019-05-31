@@ -14,8 +14,8 @@ export class age {
 
     getRemainingYears(planet){
 
-        let remainingYears = 0;
-        return planet;
+        let remainingYears = (71.5 - (new Date().getFullYear() - this.birthday.getFullYear())) / solarYears[planet];
+        return parseFloat(remainingYears.toFixed(2));
     }
 
 }
