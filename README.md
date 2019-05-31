@@ -6,7 +6,7 @@
 
 ## Description
 
-A web-based application that calculates a user's age in solar years on various planets.
+A web-based application that calculates a user's age in solar years on various planets. It also calculates the user's estimated remaining life expectancy in the given planet's solar years.
 
 | Specs |
 | :-------------     |
