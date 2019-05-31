@@ -7,12 +7,14 @@ export class age {
 
     getSpaceAge(planet){
 
-        let result = (new Date().getFullYear() - this.birthday.getFullYear()) / solarYears[planet];
+        let age = (new Date().getFullYear() - this.birthday.getFullYear()) / solarYears[planet];
 
-        return parseFloat(result.toFixed(2));
+        return parseFloat(age.toFixed(2));
     }
 
     getRemainingYears(planet){
+
+        let remainingYears = 0;
         return planet;
     }
 
